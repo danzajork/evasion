@@ -1,0 +1,23 @@
+configurations {
+    Platforms { 
+        key : "Platform";
+        choices : { Win32, x64 };
+        Win32.aliases : { x86, win32, ia32, 386 };
+        x64.aliases : { x64, amd64, em64t, intel64, x86-64, x86_64 };
+    };
+    Linkages { 
+        choices : { dynamic, static };
+    };
+    Toolsets { 
+        key : "PlatformToolset";
+        choices : { v120, v120_xp };
+    };
+    Toolset { 
+        key : "PlatformToolset";
+        choices : { v140, v140_xp };
+    };
+    Configurations { 
+        key : "Configuration";
+        choices : { Release, Debug };
+    };
+};
